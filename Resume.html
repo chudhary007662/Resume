@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Resume</title>
+</head>
+    <style>
+        /* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Layout */
+.resume-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #007bff;
+  color: white;
+  padding: 40px 20px;
+  width: 300px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.job-title {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: white;
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e6e6e6;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ffc107;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  padding: 40px;
+  flex: 1;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills span {
+  background: #e0f0ff;
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+        
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .skills {
+    justify-content: flex-start;
+  }
+}
+
+    
+    
+    
+    </style>
+<body>
+
+  <div class="resume-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="profileImg.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Hammad Hassan</h1>
+      <p class="job-title">Front-End Developer</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/hammad-hassan-88617237a" class="btn">LinkedIn</a>
+        <a href="https://github.com/chudhary007662" class="btn">GitHub</a>
+        <a href="https://chudhary007662.github.io/MyProfile/" class="btn">Portfolio</a>
+      </div>
+      <a href="resume.pdf" class="download-btn" download>📄 Download Resume</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section>
+        <h2>About Me</h2>
+        <p>I’m a passionate front-end developer skilled in modern web technologies, focused on creating responsive, user-centric web experiences.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+       <section>
+  <h2>Education</h2>
+  <ul>
+      <strong>Bachelpr of Science in Computer Science (BSCS)</strong> – Emerson University, Multan  
+  </ul>
+</section>
+
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li>Designed and developed multiple responsive websites using HTML5, CSS3, and JavaScript, focusing on clean UI and user experience.</li>
+        <li>Built a personal portfolio website to showcase projects, featuring smooth navigation, animations, and contact integration.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+            <span>React</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+          <p>Email: hamamdchudhary419@gmail.com</p>
+        <p>Phone: +92 03027667392</p>
+      </section>
+        
+    </main>
+    </div>
+</body>
+</html>
